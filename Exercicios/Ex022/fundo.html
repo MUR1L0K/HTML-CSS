@@ -7,26 +7,36 @@
     <title>Imagens de fundo</title>
     <style>
         body{
+            /* height: 100vh; */
             background-image: url('imagens/pattern001.png');
             background-repeat: no-repeat;
-            background-size: 100px 100px;
+            background-size: 500px;
+            background-position: center center;
+            border: 1px dashed black;
         }
-        div.quadrado{
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: lightgray;
-            width: 300px;
-            height: 300px;
+        
+
+        /*exercicio 03*/
+
+        div.bloco{
+            background-image: url('imagens/wallpaper003.jpg');
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
         }
-        div#q1{
-            background-color: skyblue;
+        div#qu1{
+            background-position: left top;
         }
-        div#q2{
-            background-image: linear-gradient(to bottom, yellow, red);
+        div#qu2{
+            background-position: left center;
         }
-        div#q3{
-            background-image: url('imagens/pattern003.png');
+        div#qu3{
+            background-position: right bottom;
+        }
+        div#qu4{
+            background-position: center center;
+            /*                   coluna/linha*/
         }
     </style>
 </head>
@@ -38,6 +48,21 @@
 
     </div>
     <div class="quadrado" id="q3">
+
+    </div>
+
+    <!-- exercicio 3 -->
+
+    <div class="bloco" id="qu1">
+
+    </div>
+    <div class="bloco" id="qu2">
+
+    </div>
+    <div class="bloco" id="qu3">
+
+    </div>
+    <div class="bloco" id="qu4">
 
     </div>
 </body>
